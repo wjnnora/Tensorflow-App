@@ -1,0 +1,5 @@
+# Exemplo de criação de modelo no Google Cloud Platform
+gcloud ai-platform versions create v3 --model=totalvendas --origin=gs://tensorflow-app-290114/projeto1 --runtime-version 2.2
+
+# Exemplo de teste da API utilizando a linha de comando
+gcloud ai-platform  predict --model totalvendas --version v3 --json-instances arquivo.json
